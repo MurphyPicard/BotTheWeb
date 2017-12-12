@@ -10,6 +10,7 @@ namespace BotTheWeb
     {
         static void Main(string[] args)
         {
+            // A new C# scraping project!
         }
     }
 }
