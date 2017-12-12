@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium.Chrome;
 
 namespace BotTheWeb
 {
@@ -10,7 +11,10 @@ namespace BotTheWeb
     {
         static void Main(string[] args)
         {
-            // A new C# scraping project!
+            
+            
+            var chromeDriver = new ChromeDriver();
+            // That was easy!
         }
     }
 }
