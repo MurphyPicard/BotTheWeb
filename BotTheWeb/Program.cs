@@ -14,7 +14,8 @@ namespace BotTheWeb
             
             
             var chromeDriver = new ChromeDriver();
-            // That was easy!
+
+            chromeDriver.Navigate().GoToUrl("http://coinmarketcap.com");
         }
     }
 }
