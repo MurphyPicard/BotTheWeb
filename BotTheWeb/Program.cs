@@ -15,7 +15,10 @@ namespace BotTheWeb
             
             var chromeDriver = new ChromeDriver();
 
-            chromeDriver.Navigate().GoToUrl("http://coinmarketcap.com");
+            chromeDriver.Navigate().GoToUrl("http://reddit.com");
+            //chromeDriver.FindElementByXPath("asdf");
+
+
         }
     }
 }
