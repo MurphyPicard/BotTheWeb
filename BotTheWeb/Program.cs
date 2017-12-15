@@ -18,11 +18,18 @@ namespace BotTheWeb
 
             chromeDriver.Navigate().GoToUrl("https://www.reddit.com");
 
-            chromeDriver.FindElementByName("q").Click(); // clicking 
-            chromeDriver.Keyboard.SendKeys("Litecoin");     // typing
-            chromeDriver.Keyboard.SendKeys(Keys.Enter);     // searching
+            var titles = chromeDriver.FindElementByClassName("title");
 
             
+            
+            Console.WriteLine("This is titles: " + titles);
+            
+
+            //chromeDriver.FindElementByName("q").Click(); // clicking 
+            //chromeDriver.Keyboard.SendKeys("Litecoin");  // typing
+            //chromeDriver.Keyboard.SendKeys(Keys.Enter);  // searching
+
+
         }
     }
 }
