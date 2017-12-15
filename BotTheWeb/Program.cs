@@ -16,9 +16,9 @@ namespace BotTheWeb
             
             var chromeDriver = new ChromeDriver();
 
-            chromeDriver.Navigate().GoToUrl("https://www.google.com");
+            chromeDriver.Navigate().GoToUrl("https://www.reddit.com");
 
-            chromeDriver.FindElementById("lst-ib").Click(); // clicking 
+            chromeDriver.FindElementByName("q").Click(); // clicking 
             chromeDriver.Keyboard.SendKeys("Litecoin");     // typing
             chromeDriver.Keyboard.SendKeys(Keys.Enter);     // searching
 
