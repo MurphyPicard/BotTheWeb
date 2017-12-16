@@ -18,11 +18,14 @@ namespace BotTheWeb
 
             chromeDriver.Navigate().GoToUrl("https://www.reddit.com");
 
-            var titles = chromeDriver.FindElementByClassName("title");
+            //var titles = chromeDriver.FindElementByClassName("may-blank");
 
-            
-            
-            Console.WriteLine("This is titles: " + titles);
+
+
+            //foreach (var title in titles)
+            //{
+            //    Console.WriteLine("This is titles: " + title);
+            //}
             
 
             //chromeDriver.FindElementByName("q").Click(); // clicking 
