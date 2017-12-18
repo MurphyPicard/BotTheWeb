@@ -18,6 +18,8 @@ namespace BotTheWeb
 
             chromeDriver.Navigate().GoToUrl("https://www.reddit.com");
 
+            // Will test on coingecko.com
+
             //var titles = chromeDriver.FindElementByClassName("may-blank");
 
 
