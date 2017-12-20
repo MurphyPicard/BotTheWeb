@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
@@ -18,14 +19,16 @@ namespace BotTheWeb
 
             chromeDriver.Navigate().GoToUrl("https://www.reddit.com");
 
-            //var titles = chromeDriver.FindElementByClassName("title");
+            var titles2 = chromeDriver.FindElementByClassName("title").ToString();
+            var titles = new List<string> {titles2} ;
 
-            //foreach (var title in titles)
-            //{
-                
-            //        Console.WriteLine(title.Text);
-                
-            //}
+
+            foreach (var title in titles)
+            {
+                Console.WriteLine("it works");
+                Console.WriteLine(title);
+
+            }
 
             //var titles = chromeDriver.FindElementByClassName("coin-content-symbol");
 
