@@ -18,14 +18,14 @@ namespace BotTheWeb
 
             chromeDriver.Navigate().GoToUrl("https://www.reddit.com");
 
-            var titles = chromeDriver.FindElementByClassName("title");
+            //var titles = chromeDriver.FindElementByClassName("title");
 
-            foreach (var title in titles)
-            {
+            //foreach (var title in titles)
+            //{
                 
-                    Console.WriteLine(title.Text);
+            //        Console.WriteLine(title.Text);
                 
-            }
+            //}
 
             //var titles = chromeDriver.FindElementByClassName("coin-content-symbol");
 
