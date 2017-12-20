@@ -18,7 +18,7 @@ namespace BotTheWeb
 
             chromeDriver.Navigate().GoToUrl("https://www.coingecko.com");
             chromeDriver.FindElementById("select2-coins_to_search-container").Click();
-            chromeDriver.Keyboard.SendKeys("hello");
+            chromeDriver.Keyboard.SendKeys("bch");
             chromeDriver.Keyboard.SendKeys(Keys.Enter);
             // obs recording software
             // Will test on coingecko.com
