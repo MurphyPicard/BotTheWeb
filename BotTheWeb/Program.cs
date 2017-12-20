@@ -16,28 +16,27 @@ namespace BotTheWeb
             
             var chromeDriver = new ChromeDriver();
 
-            chromeDriver.Navigate().GoToUrl("https://www.coingecko.com");
-            chromeDriver.FindElementById("select2-coins_to_search-container").Click();
-            chromeDriver.Keyboard.SendKeys("bch");
-            chromeDriver.Keyboard.SendKeys(Keys.Enter);
+            chromeDriver.Navigate().GoToUrl("https://www.reddit.com");
+
+            var titles = chromeDriver.FindElementByClassName("title");
+
+            foreach (var title in titles)
+            {
+                
+                    Console.WriteLine(title.Text);
+                
+            }
+
+            //var titles = chromeDriver.FindElementByClassName("coin-content-symbol");
+
+            //for(var i = 0; i < titles.)
+
+            // Works on coingecko.com
+            //chromeDriver.FindElementById("select2-coins_to_search-container").Click();
+            //chromeDriver.Keyboard.SendKeys("bch");
+            //chromeDriver.Keyboard.SendKeys(Keys.Enter);
             // obs recording software
-            // Will test on coingecko.com
 
-
-
-            //var titles = chromeDriver.FindElementByClassName("may-blank");
-
-
-
-            //foreach (var title in titles)
-            //{
-            //    Console.WriteLine("This is titles: " + title);
-            //}
-
-
-            //chromeDriver.FindElementByName("q").Click(); // clicking 
-            //chromeDriver.Keyboard.SendKeys("Litecoin");  // typing
-            //chromeDriver.Keyboard.SendKeys(Keys.Enter);  // searching
 
 
         }
